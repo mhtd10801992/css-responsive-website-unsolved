@@ -3,15 +3,229 @@
   * Add the media rule and the styles that are common within the TABLET and MOBILE views
   * Add the media rule and the styles that belong to the MOBILE view only
 */
-
-@media (min-width: 1024px) {
-  /* .top-navigation .trigram {
-    display: none;
-  } */
-
-  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+.teammate-social-icons > div {
+ 
+  transition: background-color 0.3s;
 }
+
+.teammate-social-icons > div:hover {
+  background-color: #626666; 
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .top-navigation .trigram {
+    display: none;
+  } 
+  .top-navigation ul{
+    display: flex;
+    }
+}
+
+.social-icons div span {
+ 
+  transition: color 0.3s ease;
+}
+
+.social-icons div:hover span {
+  color: #f6f6f7; 
+}
+
+.social-icons .icon {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.footer-contacts a {
+  
+      display: inline-block;
+}
+.footer-contacts a:hover {
+  color: #f2f4f7;
+  transition: background-color 0.3s ease;
+      
+}
+
+.address p {
+        display: inline-block;
+}
+
+ .address p:hover {
+  color: #f2f4f7;
+  transition: background-color 0.3s ease;
+  }
+
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 
+@media (max-width: 1023px) {
+  .trigram {
+    display: block;
+  }
+
+  .top-navigation ul {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1028px) {
+
+  
+header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid rgb(204, 200, 200); /* Bottom grey boundary */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-self: left;
+  }
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+  .teammates-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+  }
+  .teammate {
+    height:auto;
+
+  }
+
+  .teammate-img-wrapper {
+    width:max-content;
+    height:68%;
+  }
+  .teammates-list {
+    width: 100%;
+    
+  }
+}
+
+
+
+  
+
+
+
+
+
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (min-width: 360px) and (max-width: 767px) {
+  header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid rgb(204, 200, 200); /* Bottom grey boundary */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-list { 
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-item-info {
+    display: flex;
+    align-items: center;
+
+  }
+  .item-description {
+    display: flex;
+    text-align: center;
+  }
+  .teammates-list-wrapper {
+    display: grid;
+    gap: 20px;
+}
+  .teammate {
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #c7d1d1;
+  }
+  .teammate-data {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 10px;
+    
+  }
+  .teammate-social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  .social-icons {
+    display:flex;
+    flex-direction: column;
+  }
+  .social-icons div span {
+ color: #f6f6f7;
+  transition: color 0.3s ease;
+}
+ .footer-contacts {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+
+.social-icons .facebook .icon {
+  background-color: #fbfcff; /* Facebook Blue */
+  color: rgb(15, 15, 15); /* Icon color */
+  padding: 10px;
+  border-radius: 50%; /* Optional: makes it circular */
+}
+
+.social-icons .twitter .icon {
+  background-color: #fdfeff; /* Twitter Blue */
+  color: rgb(14, 13, 13);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-icons .instagram .icon {
+  background-color: #faf8f9; /* Instagram Pink */
+  color: rgb(5, 5, 5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-icons .linked-in .icon {
+  background-color: #f9fbfc; /* LinkedIn Blue */
+  color: rgb(15, 15, 15);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+}
+
